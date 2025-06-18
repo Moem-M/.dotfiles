@@ -2,10 +2,18 @@
     border: none;
     border-radius: 0;
     font-family: mononoki Nerd Font;
-    font-size: 14px;
+    font-size: 17px;
     min-height: 0;
-    background: #24283b;
     color: #c0caf5;
+}
+
+tooltip {
+  background: #1a1b26;
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+tooltip label {
+  color: white;
 }
 
 window#waybar {
@@ -13,7 +21,7 @@ window#waybar {
 }
 
 #workspaces {
-	margin: 5px;
+	margin: 10px;
 	margin-left: 10px;
 	border-radius: 5px;
 }
@@ -24,13 +32,13 @@ window#waybar {
 
 #workspaces button.active {
     color: #7aa2f7;
-    border-radius: 1px;
+    background: #7aa2f7;
 }
 
 
- #clock, #pulseaudio, #network {
+ #clock, #pulseaudio, #network, #tray, #language{
 	padding: 5px 10px;
-	margin: 5px 0px;
+	margin: 5px 5px;
 }
 
 #clock {

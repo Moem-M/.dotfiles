@@ -1,0 +1,6 @@
+// -*- mode: jsonc -*-
+{
+    "hyprland/language" : {
+        "format" : "{shortDescription}"
+    }
+}

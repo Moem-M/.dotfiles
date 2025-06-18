@@ -1,0 +1,17 @@
+// -*- mode: jsonc -*-
+{
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{format_source}   {volume}% {icon} ",
+            "format-bluetooth-muted": " {icon} {format_source}",
+            "format-muted": " {format_source}",
+            "format-source": "",
+            "format-source-muted": "",
+            "format-icons": {
+                "default": [" ", "", ""]
+            },
+            "on-click": "pavucontrol-qt"
+    },
+
+
+}
