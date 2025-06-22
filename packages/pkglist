@@ -1,4 +1,3 @@
-7zip
 arch-install-scripts
 archlinux-xdg-menu
 base
@@ -11,8 +10,6 @@ cloudflared
 code
 colord
 discord
-dolphin
-fd
 firefox
 gamemode
 gimp
@@ -27,11 +24,13 @@ hyprpaper
 hyprpolkitagent
 hyprshot
 kitty
+konsole
 kwallet-pam
 ldns
 lib32-gamemode
 lib32-mangohud
 libreoffice-fresh
+mpv
 nano
 neovim
 nm-connection-editor
@@ -53,11 +52,10 @@ stow
 swaync
 testdisk
 thunderbird
-tmux
 ttf-font-awesome
 ttf-hack
 typescript-language-server
 vi
-vim
 virtualbox
 waybar
+yazi

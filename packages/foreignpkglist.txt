@@ -1,0 +1,7 @@
+brave-bin
+bt-dualboot
+grub-customizer
+neofetch
+rankmirrors
+yay
+yay-debug
