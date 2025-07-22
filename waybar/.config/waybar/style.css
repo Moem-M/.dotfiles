@@ -1,48 +1,62 @@
 * {
-    border: none;
-    border-radius: 0;
+    all:unset;
     font-family: mononoki Nerd Font;
     font-size: 17px;
-    min-height: 0;
+    background: transparent;
     color: #c0caf5;
+}
+
+#tray menu{
+    padding: 10px;
+    background: #353535;
+    border: 1px solid #c0caf5;
 }
 
 tooltip {
-  background: #1a1b26;
-  border: 1px solid rgba(100, 114, 125, 0.5);
+    background: #353535;
+    border: 1px solid #c0caf5;
 }
 
 tooltip label {
-  color: white;
-}
-
-window#waybar {
     color: #c0caf5;
 }
 
-#workspaces {
-	margin: 10px;
-	margin-left: 10px;
-	border-radius: 5px;
+.modules-left {
+    margin: 10 0 5 10;
+    border-radius: 55px;
+    background: #353535;
+    padding: 0px;
+    opacity: 0.95;
 }
+
+.modules-right {
+    margin: 10 10 5 0;
+    border-radius: 22px;
+    background: #353535;
+    padding: 7px;
+    opacity: 0.95;
+}
+
+#workspaces, #bluetooth, #pulseaudio, #network, #language, #clock, #tray {
+    padding: 10px;
+    margin-right: 10px;
+}
+
 #workspaces button {
-    padding: 5px 10px;
-    color: #c0caf5;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #7aa2f7;
+    background: #353535;
+    border-radius: 10px;
+    margin-right: 15px;
 }
 
 #workspaces button.active {
+    padding-right: 5px;
+    padding-left: 5px;
     color: #7aa2f7;
     background: #7aa2f7;
+    border-radius: 55px;
 }
 
-
- #clock, #pulseaudio, #network, #tray, #language{
-	padding: 5px 10px;
-	margin: 5px 5px;
-}
-
-#clock {
-    border-radius: 0px 5px 5px 0px;
-    margin-right: 10px;
-}
 

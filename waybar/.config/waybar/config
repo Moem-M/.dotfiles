@@ -21,6 +21,7 @@
 
     "modules-left": [
         "hyprland/workspaces",
+        "tray",
     ],
 
     "modules-center": [
@@ -32,7 +33,6 @@
         "network",
         "bluetooth",
         "clock",
-        "tray",
         "hyprland/language",
     ],
 

@@ -1,12 +1,9 @@
 // -*- mode: jsonc -*-
 {
     "tray": {
-        // "icon-size": 21,
-        "spacing": 10,
-            // "icons": {
-            //   "blueman": "bluetooth",
-            // }
-    },
+        "icon-size": 17,
+        "spacing": 6,
+   },
 
 
 }

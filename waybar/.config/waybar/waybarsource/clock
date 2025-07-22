@@ -2,7 +2,7 @@
 {
     "clock": {
         "timezone": "Asia/Riyadh",
-            "format": "{:%H:%M    %A, %B %d, %Y }",
+            "format": "{:%H:%M   %B %d, %Y}",
             "tooltip-format": "<tt><small>{calendar}</small></tt>",
             "calendar": {
                 "mode"          : "year",
