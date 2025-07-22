@@ -7,7 +7,7 @@
 // define colors etc.
 * {
     bg: #24283b;
-    hv: #9274ca; 
+    hv: #7aa2f7; 
     primary: #C5C8C6; 
     ug: #0B2447;
     font: "mononoki Nerd Font";
@@ -17,7 +17,7 @@
     kl: #7aa2f7;
     black: #000000;
 
-    transparent: rgba(46,52,64,0);
+    transparent: #7aa2f7;
 }
 
 // defines different aspects of the window
@@ -48,7 +48,7 @@ inputbar {
     color: @kl;
     padding: 11px;
     border: 3px 3px 2px 3px;
-    border-color: @primary;
+    border-color: @transparent;
     border-radius: 6px 6px 0px 0px;
 }
 
@@ -79,7 +79,7 @@ listview {
     columns: 2;
     border: 0px 3px 3px 3px; 
     border-radius: 0px 0px 6px 6px;
-    border-color: @primary;
+    border-color: @transparent;
     dynamic: false;
 }
 
