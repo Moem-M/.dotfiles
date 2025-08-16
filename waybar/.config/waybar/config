@@ -10,9 +10,10 @@
         "~/.dotfiles/waybar/.config/waybar/waybarsource/tray",
         "~/.dotfiles/waybar/.config/waybar/waybarsource/window",
         "~/.dotfiles/waybar/.config/waybar/waybarsource/bluetooth",
+        "~/.dotfiles/waybar/.config/waybar/waybarsource/notif-center",
     ],
 
-    "layer": "top", // Waybar at top layer
+    "layer": "bottom", // Waybar behind windows
     "position": "top",
     "height": 30, // Waybar height (to be removed for auto height)
     "width": 1915, // Waybar width
@@ -34,6 +35,7 @@
         "bluetooth",
         "clock",
         "hyprland/language",
+        "custom/notif-center",
     ],
 
 }

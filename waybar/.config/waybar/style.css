@@ -37,7 +37,7 @@ tooltip label {
     opacity: 0.95;
 }
 
-#workspaces, #bluetooth, #pulseaudio, #network, #language, #clock, #tray {
+#workspaces, #bluetooth, #pulseaudio, #network, #language, #clock, #tray, #notif-center {
     padding: 10px;
     margin-right: 10px;
 }
