@@ -10,7 +10,19 @@ configuration{
     display-drun: "🔎 APPS";
     display-run: "🔎 RUN";
     display-window: " Windows";
-    
+
+   drun {
+      /** Scan the current users desktop for desktop files. */
+      scan-desktop: true;
+      /** Parse user desktop files. */
+      parse-user:   true;
+      /** Parse system desktop files. */
+      parse-system: true;
+      /** Disable DBusActivatable */
+      DBusActivatable: false;
+   }
+
+
     //adding vim keybindings
     //kb-row-up: "Up,Control+k";
     //kb-row-left: "Left,Control+h";
