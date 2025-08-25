@@ -1,7 +1,7 @@
 return {
     {
         "mason-org/mason.nvim",
-        opts = {}
+        opts = {},
     },
 
     {
@@ -14,12 +14,22 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
+            local capabilities = require("blink.cmp").get_lsp_capabilities()
             local lspconfig = require("lspconfig")
-            lspconfig.lua_ls.setup({})
-            lspconfig.ts_la.setup({})
-            lspconfig.cssls.setup({})
-            lspconfig.html.setup({})
-            lspconfig.jsonls.setup({})
-        end
+            lspconfig.lua_ls.setup({capabilities = capabilities,
+            settings = {
+                    Lua = {
+                        workspace = {
+                            userThirdParty = {"~/.dotfiles/nvim/lua_addons"},
+                            checkThirdParty = "Apply"
+                        }
+                    }
+                }
+            })
+            lspconfig.ts_la.setup({capabilities = capabilities})
+            lspconfig.cssls.setup({capabilities = capabilities})
+            lspconfig.html.setup({capabilities = capabilities})
+            lspconfig.jsonls.setup({capabilities = capabilities})
+        end,
     },
 }
