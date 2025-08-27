@@ -8,6 +8,7 @@ return {
         "mason-org/mason-lspconfig.nvim",
         opts = {
             ensure_installed = { "lua_ls", "ts_ls", "cssls", "html", "jsonls" },
+            handlers = {},
         },
     },
 
@@ -26,7 +27,7 @@ return {
                     }
                 }
             })
-            lspconfig.ts_la.setup({capabilities = capabilities})
+            lspconfig.ts_ls.setup({capabilities = capabilities})
             lspconfig.cssls.setup({capabilities = capabilities})
             lspconfig.html.setup({capabilities = capabilities})
             lspconfig.jsonls.setup({capabilities = capabilities})
