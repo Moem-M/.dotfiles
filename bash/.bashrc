@@ -21,6 +21,9 @@ bind "set show-all-if-ambiguous on"
 #use starship (prompt manager)
 eval "$(starship init bash)"
 
+#use Zoxide (better cd command)
+eval "$(zoxide init --cmd cd bash)"
+
 # yazi 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
