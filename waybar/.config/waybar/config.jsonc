@@ -1,0 +1,41 @@
+// -*- mode: jsonc -*-
+{
+
+    "include":[
+        "~/.dotfiles/waybar/.config/waybar/waybarsource/language.jsonc",
+        "~/.dotfiles/waybar/.config/waybar/waybarsource/workspaces.jsonc",
+        "~/.dotfiles/waybar/.config/waybar/waybarsource/clock.jsonc",
+        "~/.dotfiles/waybar/.config/waybar/waybarsource/audio.jsonc",
+        "~/.dotfiles/waybar/.config/waybar/waybarsource/network.jsonc",
+        "~/.dotfiles/waybar/.config/waybar/waybarsource/tray.jsonc",
+        "~/.dotfiles/waybar/.config/waybar/waybarsource/window.jsonc",
+        "~/.dotfiles/waybar/.config/waybar/waybarsource/bluetooth.jsonc",
+        "~/.dotfiles/waybar/.config/waybar/waybarsource/notif-center.jsonc"
+    ],
+
+    "layer": "bottom", // Waybar behind windows
+    "position": "top",
+    "height": 30, // Waybar height (to be removed for auto height)
+    "width": 1915, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    "reload_style_on_change": true,
+
+    "modules-left": [
+        "hyprland/workspaces",
+        "tray"
+    ],
+
+    "modules-center": [
+        "hyprland/window"
+    ],
+
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "bluetooth",
+        "clock",
+        "hyprland/language",
+        "custom/notif-center"
+    ]
+
+}

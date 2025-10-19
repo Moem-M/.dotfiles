@@ -7,7 +7,7 @@
             "format-linked": "{ifname} (No IP) ",
             "format-disconnected": "Disconnected ⚠",
             "on-click" : "exec nm-connection-editor"
-    },
+    }
 
 
 }
