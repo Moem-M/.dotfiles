@@ -1,7 +1,7 @@
 brave-bin
 bt-dualboot
 grub-customizer
-neofetch
-rankmirrors
+gtk2
+packettracer
 yay
 yay-debug
