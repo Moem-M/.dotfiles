@@ -1,12 +1,19 @@
 * {
-    all:unset;
+    all: unset;
     font-family: "mononoki Nerd Font";
-    font-size: 17px;
     background: transparent;
     color: #c0caf5;
 }
 
-#tray menu{
+.monitor-1 {
+    font-size: 20px;
+}
+
+.monitor-2 {
+    font-size: 17px;
+}
+
+#tray menu {
     padding: 10px;
     background: #353535;
     border: 1px solid #c0caf5;
@@ -22,7 +29,7 @@ tooltip label {
 }
 
 .modules-left {
-    margin: 10 0 5 10;
+    margin: 10px 0px 5px 10px;
     border-radius: 55px;
     background: #353535;
     padding: 0px;
@@ -30,14 +37,21 @@ tooltip label {
 }
 
 .modules-right {
-    margin: 10 10 5 0;
+    margin: 10px 10px 5px 0px;
     border-radius: 22px;
     background: #353535;
     padding: 7px;
     opacity: 0.95;
 }
 
-#workspaces, #bluetooth, #pulseaudio, #network, #language, #clock, #tray, #custom-notif-center {
+#workspaces,
+#bluetooth,
+#pulseaudio,
+#network,
+#language,
+#clock,
+#tray,
+#custom-notif-center {
     padding: 10px;
     margin-right: 10px;
 }
@@ -58,5 +72,3 @@ tooltip label {
     background: #7aa2f7;
     border-radius: 55px;
 }
-
-
