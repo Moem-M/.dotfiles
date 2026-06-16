@@ -1,4 +1,4 @@
-require("hyprsource/autostart-defaults")
+require("hyprsource/autostart")
 require("hyprsource/input")
 require("hyprsource/keybinds")
 require("hyprsource/monitors")

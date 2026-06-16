@@ -1,9 +1,3 @@
--- Defaults
-local terminal = "kitty"
-local fileManager = "kitty yazi" --kinda works (not in y mode)
-local menu = "rofi -show drun"
-local browser = "waterfox"
-
 hl.on("hyprland.start", function()
 	-- start hyprland locked or dont start hyprland at all
 	hl.exec_cmd("hyprlock || hyprctl dispatch exit")
