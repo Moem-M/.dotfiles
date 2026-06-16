@@ -1,0 +1,8 @@
+require("hyprsource/autostart-defaults")
+require("hyprsource/input")
+require("hyprsource/animations")
+require("hyprsource/keybinds")
+require("hyprsource/monitors")
+require("hyprsource/look-and-feel")
+require("hyprsource/env")
+require("hyprsource/window")
