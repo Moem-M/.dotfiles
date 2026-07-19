@@ -2,43 +2,6 @@
 [
     {
         "layer": "bottom", // Waybar behind windows
-        "output": "DP-1",
-        "name": "monitor-1",
-        "include": [
-            "~/.dotfiles/waybar/.config/waybar/waybarsource/language.jsonc",
-            "~/.dotfiles/waybar/.config/waybar/waybarsource/workspaces.jsonc",
-            "~/.dotfiles/waybar/.config/waybar/waybarsource/clock.jsonc",
-            "~/.dotfiles/waybar/.config/waybar/waybarsource/audio.jsonc",
-            "~/.dotfiles/waybar/.config/waybar/waybarsource/network.jsonc",
-            "~/.dotfiles/waybar/.config/waybar/waybarsource/tray.jsonc",
-            "~/.dotfiles/waybar/.config/waybar/waybarsource/window.jsonc",
-            "~/.dotfiles/waybar/.config/waybar/waybarsource/bluetooth.jsonc",
-            "~/.dotfiles/waybar/.config/waybar/waybarsource/notif-center.jsonc",
-        ],
-        "position": "top",
-        "width": 2560, // Waybar width
-        "spacing": 4, // Gaps between modules (4px)
-        "reload_style_on_change": true,
-        "modules-left": [
-            "hyprland/workspaces",
-            "tray"
-        ],
-        "modules-center": [
-            "hyprland/window"
-        ],
-        "modules-right": [
-            "pulseaudio",
-            "network",
-            "bluetooth",
-            "clock",
-            "hyprland/language",
-            "custom/notif-center",
-        ],
-    },
-    {
-        "layer": "bottom", // Waybar behind windows
-        "output": "DP-2",
-        "name": "monitor-2",
         "include": [
             "~/.dotfiles/waybar/.config/waybar/waybarsource/language.jsonc",
             "~/.dotfiles/waybar/.config/waybar/waybarsource/workspaces.jsonc",
