@@ -3,7 +3,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("hyprlock || hyprctl dispatch exit")
 
 	-- swaync is the notification daemon
-	hl.exec_cmd("waybar & hyprpaper & swaync & hypridle & discord & thunderbird")
+	hl.exec_cmd("waybar & hyprpaper & swaync & hypridle")
 
 	-- GUI applications being able to request elevated privileges
 	hl.exec_cmd("systemctl --user start hyprpolkitagent")
