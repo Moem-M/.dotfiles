@@ -12,6 +12,7 @@
             "~/.dotfiles/waybar/.config/waybar/waybarsource/window.jsonc",
             "~/.dotfiles/waybar/.config/waybar/waybarsource/bluetooth.jsonc",
             "~/.dotfiles/waybar/.config/waybar/waybarsource/notif-center.jsonc",
+            "~/.dotfiles/waybar/.config/waybar/waybarsource/battery.jsonc",
         ],
         "position": "top",
         "width": 1920, // Waybar width
@@ -30,6 +31,7 @@
             "bluetooth",
             "clock",
             "hyprland/language",
+            "battery",
             "custom/notif-center",
         ],
     },
