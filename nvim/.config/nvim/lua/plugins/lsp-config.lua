@@ -1,39 +1,34 @@
 return {
-    {
-        "mason-org/mason.nvim",
-        opts = {},
-    },
+	{
+		"mason-org/mason.nvim",
+		opts = {
+			firewall = {
+				enabled = true,
+			},
+		},
+	},
 
-    {
-        "mason-org/mason-lspconfig.nvim",
-        opts = {
-            ensure_installed = { "lua_ls", "ts_ls", "cssls", "html", "jsonls", "bashls" },
-            handlers = {},
-        },
-    },
+	{
+		"mason-org/mason-lspconfig.nvim",
+		opts = {},
+	},
 
-    {
-        "neovim/nvim-lspconfig",
-        config = function()
-            local capabilities = require("blink.cmp").get_lsp_capabilities()
-            local lspconfig = require("lspconfig")
-            lspconfig.lua_ls.setup({
-                capabilities = capabilities,
-                settings = {
-                    Lua = {
-                        workspace = {
-                            userThirdParty = { "~/.dotfiles/nvim/lua_addons" },
-                            checkThirdParty = "Apply",
-                        },
-                    },
-                },
-            })
-            lspconfig.ts_ls.setup({ capabilities = capabilities })
-            lspconfig.cssls.setup({ capabilities = capabilities })
-            lspconfig.html.setup({ capabilities = capabilities })
-            lspconfig.jsonls.setup({ capabilities = capabilities })
-            lspconfig.jdtls.setup({ capabilities = capabilities })
-            lspconfig.bashls.setup({ capabilities = capabilities })
-        end,
-    },
+	{
+		"neovim/nvim-lspconfig",
+		config = function()
+			local capabilities = require("blink.cmp").get_lsp_capabilities()
+			vim.lsp.config("lua_ls", {
+				capabilities = capabilities,
+				settings = {
+					Lua = {
+						workspace = {
+							userThirdParty = { "~/.dotfiles/nvim/lua_addons" },
+							checkThirdParty = "Apply",
+						},
+					},
+				},
+			})
+			vim.lsp.enable({ "lua_ls", "ts_ls", "cssls", "html", "jsonls", "jdtls", "bashls", "clangd", "pylsp"})
+		end,
+	},
 }
