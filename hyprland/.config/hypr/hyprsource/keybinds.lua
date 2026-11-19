@@ -16,8 +16,8 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("obsidian"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(browser))
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hyprshot -m region")) -- take rectangle region screenshot
-hl.bind(mainMod .. " + O + P", hl.dsp.exec_cmd("hyprshot -m output -z")) -- take screenshot of entire screen
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hyprshot -m region -o ~/Pictures/screenshots/")) -- take rectangle region screenshot
+hl.bind(mainMod .. " + O + P", hl.dsp.exec_cmd("hyprshot -m output -z -o ~/Pictures/screenshots/")) -- take screenshot of entire screen
 hl.bind("ALT + tab", hl.dsp.exec_cmd("rofi -show window"))
 
 -- Move focus with mainMod + arrow keys
